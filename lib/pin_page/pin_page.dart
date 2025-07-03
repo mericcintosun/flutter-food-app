@@ -6,7 +6,17 @@ class PinPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        leading: GestureDetector(
+          onTap: () {
+            Navigator.pop(context);
+          },
+          child: Icon(
+            Icons.arrow_back,
+            color: Colors.grey,
+          ),
+        ),
+      ),
       body: Container(
         child: Padding(
           padding: const EdgeInsets.all(

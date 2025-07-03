@@ -61,7 +61,6 @@ flutter:
     - assets/
     - assets/welcomepage_assets/
     - assets/homepage_assets/
-    - assets/intropage_assets/
     - assets/verifypage_assets/
 
   # An image asset can refer to one or more resolution-specific "variants", see

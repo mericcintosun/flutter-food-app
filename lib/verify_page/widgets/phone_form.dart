@@ -1,3 +1,4 @@
+import 'package:figmatasarim/pin_page/pin_page.dart';
 import 'package:flutter/material.dart';
 
 class PhoneNumberForm
@@ -125,31 +126,43 @@ class _PhoneNumberFormState
 
         SizedBox(height: 40),
 
-        Container(
-          width: double.infinity,
-          padding: EdgeInsets.symmetric(
-            vertical: 16,
-          ),
-          decoration: BoxDecoration(
-            color: Color.fromARGB(
-              255,
-              123,
-              78,
-              64,
-            ),
-            borderRadius:
-                BorderRadius.circular(
-                  50,
+        GestureDetector(
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) =>
+                    const PinPage(),
+              ),
+            );
+          },
+          child: Container(
+            width: double.infinity,
+            padding:
+                EdgeInsets.symmetric(
+                  vertical: 16,
                 ),
-          ),
-          alignment: Alignment.center,
-          child: Text(
-            'Continue',
-            style: TextStyle(
-              fontSize: 16,
-              fontWeight:
-                  FontWeight.bold,
-              color: Colors.white,
+            decoration: BoxDecoration(
+              color: Color.fromARGB(
+                255,
+                123,
+                78,
+                64,
+              ),
+              borderRadius:
+                  BorderRadius.circular(
+                    50,
+                  ),
+            ),
+            alignment: Alignment.center,
+            child: Text(
+              'Continue',
+              style: TextStyle(
+                fontSize: 16,
+                fontWeight:
+                    FontWeight.bold,
+                color: Colors.white,
+              ),
             ),
           ),
         ),

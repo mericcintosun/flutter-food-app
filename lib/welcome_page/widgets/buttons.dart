@@ -1,3 +1,4 @@
+import 'package:figmatasarim/verify_page/verify_page.dart';
 import 'package:flutter/material.dart';
 
 class Buttons extends StatelessWidget {
@@ -36,7 +37,15 @@ class Buttons extends StatelessWidget {
                 elevation:
                     0, // Gölgeyi kaldırmak için
               ),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) =>
+                        const VerifyPage(),
+                  ),
+                );
+              },
               child: Text(
                 "Log in",
                 style: TextStyle(
@@ -53,7 +62,15 @@ class Buttons extends StatelessWidget {
             child: ElevatedButton(
               style:
                   ElevatedButton.styleFrom(),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) =>
+                        const VerifyPage(),
+                  ),
+                );
+              },
               child: Text(
                 "Sign me up",
                 style: TextStyle(

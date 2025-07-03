@@ -1,4 +1,5 @@
 import 'package:figmatasarim/verify_page/widgets/phone_form.dart';
+import 'package:figmatasarim/pin_page/pin_page.dart';
 import 'package:flutter/material.dart';
 
 class VerifyPage
@@ -25,9 +26,13 @@ class _VerifyPageState
           children: [
             Row(
               children: [
-                Icon(
-                  Icons.arrow_back,
-                  color: Colors.grey,
+                GestureDetector(
+                  onTap: () {
+                    Navigator.pop(
+                      context,
+                    );
+                  },
+                 
                 ),
               ],
             ),
@@ -41,11 +46,7 @@ class _VerifyPageState
                 child: DropdownButton<String>(
                   value:
                       selectedLanguage,
-                  icon: const Icon(
-                    Icons
-                        .keyboard_arrow_down,
-                    color: Colors.grey,
-                  ),
+                
                   items:
                       <String>[
                         'English',
