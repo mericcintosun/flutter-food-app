@@ -1,18 +1,14 @@
 import 'package:figmatasarim/verify_page/widgets/phone_form.dart';
-import 'package:figmatasarim/pin_page/pin_page.dart';
 import 'package:flutter/material.dart';
 
-class VerifyPage
-    extends StatefulWidget {
+class VerifyPage extends StatefulWidget {
   const VerifyPage({super.key});
 
   @override
-  State<VerifyPage> createState() =>
-      _VerifyPageState();
+  State<VerifyPage> createState() => _VerifyPageState();
 }
 
-class _VerifyPageState
-    extends State<VerifyPage> {
+class _VerifyPageState extends State<VerifyPage> {
   @override
   Widget build(BuildContext context) {
     String selectedLanguage = 'English';
@@ -20,67 +16,42 @@ class _VerifyPageState
     return Scaffold(
       appBar: AppBar(
         title: Row(
-          mainAxisAlignment:
-              MainAxisAlignment
-                  .spaceBetween,
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Row(
               children: [
                 GestureDetector(
                   onTap: () {
-                    Navigator.pop(
-                      context,
-                    );
+                    Navigator.pop(context);
                   },
-                 
                 ),
               ],
             ),
             Container(
-              padding:
-                  const EdgeInsets.symmetric(
-                    horizontal: 12,
-                    vertical: 6,
-                  ),
+              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
               child: DropdownButtonHideUnderline(
                 child: DropdownButton<String>(
-                  value:
-                      selectedLanguage,
-                
-                  items:
-                      <String>[
-                        'English',
-                        'Turkish',
-                      ].map<
-                        DropdownMenuItem<
-                          String
-                        >
-                      >((String value) {
-                        return DropdownMenuItem<
-                          String
-                        >(
+                  value: selectedLanguage,
+
+                  items: <String>['English', 'Turkish']
+                      .map<DropdownMenuItem<String>>((String value) {
+                        return DropdownMenuItem<String>(
                           value: value,
                           child: Text(
                             value,
                             style: const TextStyle(
-                              color: Colors
-                                  .grey,
-                              fontSize:
-                                  16,
+                              color: Colors.grey,
+                              fontSize: 16,
                             ),
                           ),
                         );
-                      }).toList(),
-                  onChanged:
-                      (
-                        String?
-                        newValue,
-                      ) {
-                        setState(() {
-                          selectedLanguage =
-                              newValue!;
-                        });
-                      },
+                      })
+                      .toList(),
+                  onChanged: (String? newValue) {
+                    setState(() {
+                      selectedLanguage = newValue!;
+                    });
+                  },
                 ),
               ),
             ),
@@ -89,30 +60,19 @@ class _VerifyPageState
       ),
       body: Container(
         child: Padding(
-          padding: const EdgeInsets.all(
-            20.0,
-          ),
+          padding: const EdgeInsets.all(20.0),
           child: Column(
-            crossAxisAlignment:
-                CrossAxisAlignment
-                    .start,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                textAlign:
-                    TextAlign.start,
+                textAlign: TextAlign.start,
                 "Welcome to Ovenly",
-                style: TextStyle(
-                  fontSize: 24,
-                  fontWeight:
-                      FontWeight.bold,
-                ),
+                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
               ),
               SizedBox(height: 20),
               Text(
                 "We'll send you a verification code to get started",
-                style: TextStyle(
-                  fontSize: 16,
-                ),
+                style: TextStyle(fontSize: 16),
               ),
               SizedBox(height: 30),
               PhoneNumberForm(),

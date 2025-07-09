@@ -1,29 +1,21 @@
 import 'package:figmatasarim/pin_page/pin_page.dart';
 import 'package:flutter/material.dart';
 
-class PhoneNumberForm
-    extends StatefulWidget {
+class PhoneNumberForm extends StatefulWidget {
   PhoneNumberForm({super.key});
 
   @override
-  State<PhoneNumberForm>
-  createState() =>
-      _PhoneNumberFormState();
+  State<PhoneNumberForm> createState() => _PhoneNumberFormState();
 }
 
-class _PhoneNumberFormState
-    extends State<PhoneNumberForm> {
-  final TextEditingController
-  _phoneController =
-      TextEditingController();
+class _PhoneNumberFormState extends State<PhoneNumberForm> {
+  final TextEditingController _phoneController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
     return Column(
-      mainAxisAlignment:
-          MainAxisAlignment.center,
-      crossAxisAlignment:
-          CrossAxisAlignment.start,
+      mainAxisAlignment: MainAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Row(
           children: [
@@ -33,17 +25,14 @@ class _PhoneNumberFormState
                 style: TextStyle(
                   fontSize: 16,
                   color: Colors.black,
-                  fontWeight:
-                      FontWeight.bold,
+                  fontWeight: FontWeight.bold,
                 ),
               ),
             ),
             RichText(
               text: TextSpan(
                 text: ' *',
-                style: TextStyle(
-                  color: Colors.red,
-                ),
+                style: TextStyle(color: Colors.red),
               ),
             ),
           ],
@@ -53,34 +42,18 @@ class _PhoneNumberFormState
         Row(
           children: [
             Container(
-              padding:
-                  EdgeInsets.symmetric(
-                    horizontal: 8,
-                    vertical: 4,
-                  ),
+              padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
               decoration: BoxDecoration(
-                border: Border.all(
-                  color: Colors.grey,
-                ),
-                borderRadius:
-                    BorderRadius.circular(
-                      4,
-                    ),
+                border: Border.all(color: Colors.grey),
+                borderRadius: BorderRadius.circular(4),
               ),
               child: Row(
                 children: [
-                  Image.asset(
-                    "assets/verifypage_assets/Singapore (SG).png",
-                  ),
+                  Image.asset("assets/verifypage_assets/Singapore (SG).png"),
                   SizedBox(width: 4),
                   Text(
                     '+65',
-                    style: TextStyle(
-                      fontSize: 16,
-                      fontWeight:
-                          FontWeight
-                              .bold,
-                    ),
+                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                   ),
                 ],
               ),
@@ -88,36 +61,21 @@ class _PhoneNumberFormState
             SizedBox(width: 10),
             Expanded(
               child: TextField(
-                controller:
-                    _phoneController,
-                keyboardType:
-                    TextInputType.phone,
+                controller: _phoneController,
+                keyboardType: TextInputType.phone,
                 decoration: InputDecoration(
-                  hintText:
-                      '9876XXXXXX',
+                  hintText: '9876XXXXXX',
                   hintStyle: TextStyle(
-                    fontWeight:
-                        FontWeight.bold,
+                    fontWeight: FontWeight.bold,
                     color: Colors.grey,
                   ),
-                  border:
-                      UnderlineInputBorder(),
-                  enabledBorder:
-                      UnderlineInputBorder(
-                        borderSide:
-                            BorderSide(
-                              color: Colors
-                                  .black,
-                            ),
-                      ),
-                  focusedBorder:
-                      UnderlineInputBorder(
-                        borderSide:
-                            BorderSide(
-                              color: Colors
-                                  .black,
-                            ),
-                      ),
+                  border: UnderlineInputBorder(),
+                  enabledBorder: UnderlineInputBorder(
+                    borderSide: BorderSide(color: Colors.black),
+                  ),
+                  focusedBorder: UnderlineInputBorder(
+                    borderSide: BorderSide(color: Colors.black),
+                  ),
                 ),
               ),
             ),
@@ -130,37 +88,22 @@ class _PhoneNumberFormState
           onTap: () {
             Navigator.push(
               context,
-              MaterialPageRoute(
-                builder: (context) =>
-                    const PinPage(),
-              ),
+              MaterialPageRoute(builder: (context) => const PinPage()),
             );
           },
           child: Container(
             width: double.infinity,
-            padding:
-                EdgeInsets.symmetric(
-                  vertical: 16,
-                ),
+            padding: EdgeInsets.symmetric(vertical: 16),
             decoration: BoxDecoration(
-              color: Color.fromARGB(
-                255,
-                123,
-                78,
-                64,
-              ),
-              borderRadius:
-                  BorderRadius.circular(
-                    50,
-                  ),
+              color: Color.fromARGB(255, 123, 78, 64),
+              borderRadius: BorderRadius.circular(50),
             ),
             alignment: Alignment.center,
             child: Text(
               'Continue',
               style: TextStyle(
                 fontSize: 16,
-                fontWeight:
-                    FontWeight.bold,
+                fontWeight: FontWeight.bold,
                 color: Colors.white,
               ),
             ),
@@ -170,31 +113,15 @@ class _PhoneNumberFormState
         Container(
           child: Row(
             children: [
-              Text(
-                "You agree tou our ",
-              ),
+              Text("You agree tou our "),
               Text(
                 "Terms of Service ",
-                style: TextStyle(
-                  color: Color.fromARGB(
-                    255,
-                    123,
-                    78,
-                    64,
-                  ),
-                ),
+                style: TextStyle(color: Color.fromARGB(255, 123, 78, 64)),
               ),
               Text("& "),
               Text(
                 "Privacy Policy.",
-                style: TextStyle(
-                  color: Color.fromARGB(
-                    255,
-                    123,
-                    78,
-                    64,
-                  ),
-                ),
+                style: TextStyle(color: Color.fromARGB(255, 123, 78, 64)),
               ),
             ],
           ),

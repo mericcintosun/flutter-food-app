@@ -11,29 +11,21 @@ class PinPage extends StatelessWidget {
           onTap: () {
             Navigator.pop(context);
           },
-          child: Icon(
-            Icons.arrow_back,
-            color: Colors.grey,
-          ),
+          child: Icon(Icons.arrow_back, color: Colors.grey),
         ),
       ),
       body: Container(
         child: Padding(
-          padding: const EdgeInsets.all(
-            20.0,
-          ),
+          padding: const EdgeInsets.all(20.0),
           child: Column(
-            crossAxisAlignment:
-                CrossAxisAlignment
-                    .start,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
                 child: Text(
                   "Verify Your Number",
                   style: TextStyle(
                     fontSize: 24,
-                    fontWeight:
-                        FontWeight.bold,
+                    fontWeight: FontWeight.bold,
                     color: Colors.black,
                   ),
                 ),
@@ -42,50 +34,28 @@ class PinPage extends StatelessWidget {
               Container(
                 child: Text(
                   "Enter your PIN here to log in",
-                  style: TextStyle(
-                    color: Colors.grey,
-                    fontSize: 17,
-                  ),
+                  style: TextStyle(color: Colors.grey, fontSize: 17),
                 ),
               ),
               SizedBox(height: 50),
               Container(
                 child: Row(
-                  mainAxisAlignment:
-                      MainAxisAlignment
-                          .spaceBetween,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Align(
                       child: Container(
                         width: 55,
                         height: 55,
                         decoration: BoxDecoration(
-                          color:
-                              const Color.fromARGB(
-                                255,
-                                238,
-                                236,
-                                236,
-                              ),
-                          borderRadius:
-                              BorderRadius.circular(
-                                10,
-                              ),
+                          color: const Color.fromARGB(255, 238, 236, 236),
+                          borderRadius: BorderRadius.circular(10),
                         ),
                         child: Padding(
-                          padding:
-                              const EdgeInsets.all(
-                                20.0,
-                              ),
+                          padding: const EdgeInsets.all(20.0),
                           child: Container(
                             decoration: BoxDecoration(
-                              color: const Color(
-                                0xffb55738,
-                              ),
-                              borderRadius:
-                                  BorderRadius.circular(
-                                    100,
-                                  ),
+                              color: const Color(0xffb55738),
+                              borderRadius: BorderRadius.circular(100),
                             ),
                           ),
                         ),
@@ -96,32 +66,15 @@ class PinPage extends StatelessWidget {
                         width: 55,
                         height: 55,
                         decoration: BoxDecoration(
-                          color:
-                              const Color.fromARGB(
-                                255,
-                                238,
-                                236,
-                                236,
-                              ),
-                          borderRadius:
-                              BorderRadius.circular(
-                                10,
-                              ),
+                          color: const Color.fromARGB(255, 238, 236, 236),
+                          borderRadius: BorderRadius.circular(10),
                         ),
                         child: Padding(
-                          padding:
-                              const EdgeInsets.all(
-                                20.0,
-                              ),
+                          padding: const EdgeInsets.all(20.0),
                           child: Container(
                             decoration: BoxDecoration(
-                              color: const Color(
-                                0xffb55738,
-                              ),
-                              borderRadius:
-                                  BorderRadius.circular(
-                                    100,
-                                  ),
+                              color: const Color(0xffb55738),
+                              borderRadius: BorderRadius.circular(100),
                             ),
                           ),
                         ),
@@ -132,32 +85,15 @@ class PinPage extends StatelessWidget {
                         width: 55,
                         height: 55,
                         decoration: BoxDecoration(
-                          color:
-                              const Color.fromARGB(
-                                255,
-                                238,
-                                236,
-                                236,
-                              ),
-                          borderRadius:
-                              BorderRadius.circular(
-                                10,
-                              ),
+                          color: const Color.fromARGB(255, 238, 236, 236),
+                          borderRadius: BorderRadius.circular(10),
                         ),
                         child: Padding(
-                          padding:
-                              const EdgeInsets.all(
-                                20.0,
-                              ),
+                          padding: const EdgeInsets.all(20.0),
                           child: Container(
                             decoration: BoxDecoration(
-                              color: const Color(
-                                0xffb55738,
-                              ),
-                              borderRadius:
-                                  BorderRadius.circular(
-                                    100,
-                                  ),
+                              color: const Color(0xffb55738),
+                              borderRadius: BorderRadius.circular(100),
                             ),
                           ),
                         ),
@@ -168,32 +104,15 @@ class PinPage extends StatelessWidget {
                         width: 55,
                         height: 55,
                         decoration: BoxDecoration(
-                          color:
-                              const Color.fromARGB(
-                                255,
-                                238,
-                                236,
-                                236,
-                              ),
-                          borderRadius:
-                              BorderRadius.circular(
-                                10,
-                              ),
+                          color: const Color.fromARGB(255, 238, 236, 236),
+                          borderRadius: BorderRadius.circular(10),
                         ),
                         child: Padding(
-                          padding:
-                              const EdgeInsets.all(
-                                20.0,
-                              ),
+                          padding: const EdgeInsets.all(20.0),
                           child: Container(
                             decoration: BoxDecoration(
-                              color: const Color(
-                                0xffb55738,
-                              ),
-                              borderRadius:
-                                  BorderRadius.circular(
-                                    100,
-                                  ),
+                              color: const Color(0xffb55738),
+                              borderRadius: BorderRadius.circular(100),
                             ),
                           ),
                         ),
@@ -204,36 +123,15 @@ class PinPage extends StatelessWidget {
                         width: 55,
                         height: 55,
                         decoration: BoxDecoration(
-                          color:
-                              const Color.fromARGB(
-                                255,
-                                238,
-                                236,
-                                236,
-                              ),
-                          borderRadius:
-                              BorderRadius.circular(
-                                10,
-                              ),
+                          color: const Color.fromARGB(255, 238, 236, 236),
+                          borderRadius: BorderRadius.circular(10),
                         ),
                         child: Padding(
-                          padding:
-                              const EdgeInsets.all(
-                                20.0,
-                              ),
+                          padding: const EdgeInsets.all(20.0),
                           child: Container(
                             decoration: BoxDecoration(
-                              color:
-                                  const Color.fromARGB(
-                                    255,
-                                    219,
-                                    217,
-                                    217,
-                                  ),
-                              borderRadius:
-                                  BorderRadius.circular(
-                                    100,
-                                  ),
+                              color: const Color.fromARGB(255, 219, 217, 217),
+                              borderRadius: BorderRadius.circular(100),
                             ),
                           ),
                         ),
@@ -247,11 +145,8 @@ class PinPage extends StatelessWidget {
                 "Try another way",
                 style: TextStyle(
                   fontSize: 15,
-                  fontWeight:
-                      FontWeight.bold,
-                  color: const Color(
-                    0xffb55738,
-                  ),
+                  fontWeight: FontWeight.bold,
+                  color: const Color(0xffb55738),
                 ),
               ),
             ],
