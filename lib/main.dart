@@ -1,5 +1,7 @@
 import 'package:figmatasarim/home_page/homepage.dart';
 import 'package:figmatasarim/intro_page/intro_page.dart';
+import 'package:figmatasarim/profile_page/profile_page.dart';
+import 'package:figmatasarim/verify_page/verify_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,6 +13,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(debugShowCheckedModeBanner: false, home: Homepage());
+    return MaterialApp(debugShowCheckedModeBanner: false, home: IntroPage());
   }
 }

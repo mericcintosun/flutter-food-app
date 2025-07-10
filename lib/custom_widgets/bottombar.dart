@@ -15,7 +15,6 @@ class CustomBottomNavBar extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
-          // Aktif icon
           Container(
             decoration: const BoxDecoration(
               color: Colors.white,
@@ -27,7 +26,6 @@ class CustomBottomNavBar extends StatelessWidget {
             ),
           ),
 
-          // Pasif iconlar
           Image.asset("assets/bottomnavigationbar_assets/menuicon.png"),
           Image.asset("assets/bottomnavigationbar_assets/bagicon.png"),
           Image.asset("assets/bottomnavigationbar_assets/favoriteicon.png"),

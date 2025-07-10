@@ -1,4 +1,4 @@
-import 'package:figmatasarim/pin_page/pin_page.dart';
+import 'package:figmatasarim/profile_page/pin_page/pin_page.dart';
 import 'package:flutter/material.dart';
 
 class PhoneNumberForm extends StatefulWidget {

@@ -1,3 +1,4 @@
+import 'package:figmatasarim/profile_page/profile_page.dart';
 import 'package:flutter/material.dart';
 
 class HomepageDetails extends StatelessWidget {
@@ -42,9 +43,7 @@ class HomepageDetails extends StatelessWidget {
             child: IconButton(
               icon: const Icon(Icons.favorite_border),
               color: Colors.black,
-              onPressed: () {
-                // Favorilere ekle
-              },
+              onPressed: () {},
             ),
           ),
         ],
@@ -204,7 +203,6 @@ class HomepageDetails extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              // 👇 Bottom Pricing Section
               Padding(
                 padding: const EdgeInsets.symmetric(
                   horizontal: 20,
@@ -229,7 +227,6 @@ class HomepageDetails extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      // Price
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -261,10 +258,14 @@ class HomepageDetails extends StatelessWidget {
                         ],
                       ),
 
-                      // Add to Bag Button
                       ElevatedButton.icon(
                         onPressed: () {
-                          // Sepete ekle
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const ProfilePage(),
+                            ),
+                          );
                         },
                         style: ElevatedButton.styleFrom(
                           backgroundColor: const Color(0xffB24C2B),
@@ -281,7 +282,7 @@ class HomepageDetails extends StatelessWidget {
                           color: Colors.white,
                         ),
                         label: const Text(
-                          "Add to Bag",
+                          "Profile Page",
                           style: TextStyle(color: Colors.white, fontSize: 16),
                         ),
                       ),

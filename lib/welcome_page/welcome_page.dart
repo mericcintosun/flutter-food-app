@@ -26,7 +26,6 @@ class _WelcomePageState extends State<WelcomePage> {
           children: [
             Row(
               children: [
-                // Logo
                 Image.asset(
                   'assets/welcomepage_assets/logo.png',
                   width: 30,

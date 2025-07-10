@@ -112,15 +112,12 @@ class Homepage extends StatelessWidget {
                     ),
                     IconButton(
                       icon: const Icon(Icons.tune, color: Colors.black87),
-                      onPressed: () {
-                        // Filtre tıklanınca yapılacaklar
-                      },
+                      onPressed: () {},
                     ),
                   ],
                 ),
               ),
               SizedBox(height: 20),
-              // Special Offer
               Container(
                 margin: const EdgeInsets.symmetric(horizontal: 16),
                 decoration: BoxDecoration(
@@ -178,7 +175,6 @@ class Homepage extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(width: 10),
-                    // Sağ kısım: Görsel
                     Expanded(
                       flex: 2,
                       child: Image.asset(
@@ -267,7 +263,6 @@ class Homepage extends StatelessWidget {
 
               const SizedBox(height: 20),
 
-              // Pizza Card
               GestureDetector(
                 onTap: () => Navigator.of(context).push(
                   MaterialPageRoute(
@@ -288,7 +283,6 @@ class Homepage extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(vertical: 16),
                   child: Row(
                     children: [
-                      // Left Image
                       Expanded(
                         flex: 2,
                         child: Image.asset(
@@ -296,7 +290,6 @@ class Homepage extends StatelessWidget {
                         ),
                       ),
                       const SizedBox(width: 12),
-                      // Right Text
                       Expanded(
                         flex: 3,
                         child: Column(
@@ -422,7 +415,6 @@ class Homepage extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(vertical: 16),
                   child: Row(
                     children: [
-                      // Left Image
                       Expanded(
                         flex: 2,
                         child: Image.asset(
@@ -430,7 +422,6 @@ class Homepage extends StatelessWidget {
                         ),
                       ),
                       const SizedBox(width: 12),
-                      // Right Text
                       Expanded(
                         flex: 3,
                         child: Column(

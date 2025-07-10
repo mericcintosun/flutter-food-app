@@ -1,3 +1,4 @@
+import 'package:figmatasarim/home_page/homepage.dart';
 import 'package:flutter/material.dart';
 
 class PinPage extends StatelessWidget {
@@ -141,12 +142,20 @@ class PinPage extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 20),
-              Text(
-                "Try another way",
-                style: TextStyle(
-                  fontSize: 15,
-                  fontWeight: FontWeight.bold,
-                  color: const Color(0xffb55738),
+              GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const Homepage()),
+                  );
+                },
+                child: Text(
+                  "Try another way",
+                  style: TextStyle(
+                    fontSize: 15,
+                    fontWeight: FontWeight.bold,
+                    color: const Color(0xffb55738),
+                  ),
                 ),
               ),
             ],
